@@ -1,0 +1,183 @@
+/* CONFIGURAÇÕES INICIAIS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", "sans-serif";
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* HEADER  */
+
+header {
+  width: 80%;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  font-weight: 300;
+  color: #fff;
+}
+
+/* MAIN */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin-top: -60px;
+}
+
+.container .list .list_item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.container .list .list_item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+}
+
+.container .list .list_item .content {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  padding-right: 30%;
+  width: 80%;
+  color: #eee;
+  text-shadow: 0 5px 10px #0004;
+}
+
+.container .list .list_item .title {
+  font-size: 5em;
+  font-weight: 700;
+  line-height: 1.4em;
+}
+
+.container .list .list_item .description {
+  font-size: 1.2em;
+}
+
+.buttons_content {
+  display: grid;
+  grid-template-columns: repeat(2, 130px);
+  grid-template-rows: 40px;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.buttons_content button {
+  border: none;
+  background-color: #eee;
+  letter-spacing: 3px;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.buttons_content button:nth-child(2) {
+  background-color: transparent;
+  border: 1px solid #eee;
+}
+
+.buttons_content button:nth-child(1) a {
+  color: #000;
+}
+
+.buttons_content button:nth-child(2) a {
+  color: #eee;
+}
+
+.buttons_content button:hover {
+  background-color: transparent;
+  border: 1px solid #eee;
+  color: #eee;
+  transition: 0.4s;
+}
+
+.buttons_content button:nth-child(2):hover {
+  background-color: #eee;
+}
+
+.buttons_content button:nth-child(2):hover a {
+  color: #000;
+}
+
+.buttons_content button:nth-child(1):hover a {
+  color: #eee;
+}
+
+.container .thumb {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+.container .thumb .thumb_item {
+  width: 135px;
+  height: 200px;
+  position: relative;
+  z-index: 3;
+}
+
+.container .thumb .thumb_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: brightness(80%);
+}
+
+.container .thumb .content {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.container .arrows {
+  display: flex;
+  position: absolute;
+  gap: 15px;
+  bottom: 120px;
+  left: 125px;
+  width: 300px;
+  align-items: center;
+}
+
+.container .arrows button {
+  border-radius: 10px;
+  border: none;
+  padding: 12px 17px;
+  background-color: #eee4;
+  color: #eee;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.container .arrows button:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.4s;
+}
